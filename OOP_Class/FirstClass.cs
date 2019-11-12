@@ -8,15 +8,21 @@ namespace OOP_Class
 {
     class FirstClass
     {
-        public int Id;
-        public string Ad;
-        public string SoyAd;
+        //public int Id;
+        //public string Ad;
+        //public string SoyAd;
 
-        public int Kilo;
-        public int Boy;
+        //public int Kilo;
+        //public int Boy;
 
-        //public int Yas;
-        private int _yas;
+        ////public int Yas;
+        //private int _yas;
+
+        public int Id { get; set; }
+        public string Ad { get; set; }
+        public string SoyAd { get; set; }
+        public string Telefon { get; set; }
+        private int _yas { get; set; }
         public int Yas {
             get
             {
@@ -50,6 +56,11 @@ namespace OOP_Class
         //{
         //    return _yas;
         //}
+
+        public string Test1 { get; }
+        public string Test2 { get; private set; }
+        public string Test3 { get; internal set; }
+        public string Test4 { get; protected set; }
 
     }
 }
